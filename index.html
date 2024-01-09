@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=”es”>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Tablas de verdad calculadora">
+    <link rel="icon" type="image.png" href="C:\Users\juanc\Desktop\tablasVerdad\favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculadora de Tablas de Verdad</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Tablas de Verdad/Egia-Taulen Kalkugailua</h1>
+
+        <div class="leyenda">
+            <p><strong>Leyenda de Símbolos/Sinboloen Legenda</strong></p>
+            <ul>
+                <li><strong>∧</strong> Conjunción/Konjuntzioa</li>
+                <li><strong>∨</strong> Disyunción/Disjuntzioa</li>
+                <li><strong>¬</strong> Negación/Ezeztapena</li>
+                <li><strong>→</strong> Condicional/Baldintzazkoa</li>
+                <li><strong>↔</strong> Bicondicional/Baldintzabikoa</li>
+                <li><strong>( )</strong> Paréntesis/Parentesiak</li>
+                <li><strong>p, q, r, s, t</strong> Variables/Aldagaiak</li>
+            </ul>
+        </div>
+
+        <div class="botones">
+            <div class="botones-variables">
+                <button id="btnP">p</button>
+                <button id="btnQ">q</button>
+                <button id="btnR">r</button>
+                <button id="btnS">s</button>
+                <button id="btnT">t</button>
+            </div>
+            <div class="botones-simbolos">
+                <button id="btnAnd">∧</button>
+                <button id="btnOr">∨</button>
+                <button id="btnNot">¬</button>
+                <button id="btnConditional">→</button>
+                <button id="btnBiconditional">↔</button>
+                <button id="btnOpenParen">(</button>
+                <button id="btnCloseParen">)</button>
+            </div>
+        </div>
+
+        <form id="tablaVerdadForm">
+            <label for="expresion"><strong>Expresión Lógica:</strong></label>
+            <input type="text" id="expresion" name="expresion" required>
+            <button type="submit">Calcular</button>
+            <button type="button" id="btnLimpiar">Limpiar</button>
+        </form>
+
+        <div id="resultadoTabla"></div>
+    </div>
+
+    <footer>CALCULADORA TABLAS DE VERDAD</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
